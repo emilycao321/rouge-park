@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/map_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2? family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/> <!--Defining css styling for Leaflet-->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script> <!--Defines Leaflet's JS-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-21N84L9FFZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-21N84L9FFZ');
+    </script>
+    
+    <title>Rouge Park | Home</title>
+</head>
+<body>
+    <!-- <div class = "intro-grid"> -->
+    <div>
+        <div id="dropdown">
+            <div id="hamburgerBg" onclick="toggleMenu()">
+                <img src="images/hamburger.png">
+            </div>.
+            <ul id="navmenu">
+                <li><a href = "index.html"><button id="resources">Home</button></a></li>
+                <li><button id="about">About</button></li>
+                <li><button id="team">Team</button></li>
+                <li><a href = "https://docs.google.com/document/d/1Au5m7ET5CBtaW6DIacp-voAaRhva2_Z0xa4hnSQkxW0/edit?usp=sharing"><button id="events">Stories</button></a></li>
+                <li><a href = "feedback.html"><button id="feedback">Feedback</button></a></li>
+            </ul>
+            <script>
+                function toggleMenu() {
+                    if (navmenu.style.opacity == "100") {
+                        navmenu.style.display = "hidden";
+                        navmenu.style.opacity = "0";
+                    } else {
+                        navmenu.style.opacity = "100";
+                        avmeny.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+        <div>
+            <dialog class="modal" id="aboutModal">
+                <h2>About</h2>
+                <p>The Rouge Park Interactive Map is a project through
+                    the U-M Public Design Corp, a University of Michigan
+                    Taubman College of Architecture and Urban Planning
+                    program offering University of Michigan students
+                    the opportunity to engage in socially-driven design.
+                </p> <br>
+                <p>The University of Michigan's Public Design Corps (U-M
+                    PDC) is made possible through the support and
+                    mentorship of leading faculty from Taubman College
+                    of Architecture and Urban Planning. Mentors bring a
+                    breadth of international and local expertise in
+                    socially-driven design projects and assist student
+                    teams in navigating complex design challenges.</p>
+                <div class="content">
+                    <button class="button close-button-about" style="text-align:center">Close</button>
+                </div>
+            </dialog>
+            <dialog class="modal" id="teamModal">
+                <h2 class="center">Team</h2>
+                <h4 class="center">U-M Public Design Corp</h4>
+                <h4 class="center">Lead Designers</h4>
+                <div class="content">
+                    <div class="content">
+                        <div class = "team-grid">
+                            <div class="team-col-1">
+                                <p>Aracely Landero</p>
+                            </div>
+                            <div class="team-col-2">
+                                <p>McKenna Sabon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="center">Advisors</h4>
+                <div class="content">
+                    <div class="content">
+        
+                            <div >
+                                    <p>Anya Sirota</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                <h4 class="center">Web Designers</h4>
+                <h5 class="center">Atlas Digital</h5>
+                <div class="content">
+                    <div class ="team-row">
+                        <div class = "team-grid">
+                            <p class="team-col-1">Lydia Tan</p>
+                            <p class="team-col-2">Project Manager</p>
+                        </div>
+                        <div class = "team-grid">
+                            <p class="team-col-1">Emily Cao</p>
+                            <p class="team-col-2">Analyst</p>
+                        </div>
+                        <div class = "team-grid">
+                            <p class="team-col-1">Flynn Lyon</p>
+                            <p class="team-col-2">Analyst</p>
+                        </div>
+                        <div class = "team-grid">
+                            <p class="team-col-1">Parth Narang</p>
+                            <p class="team-col-2">Analyst</p>
+                        </div>
+                        <div class = "team-grid">
+                            <p class="team-col-1">Haripriya Suryadevara</p>
+                            <p class="team-col-2">Analyst</p>
+                        </div>
+                        <div class = "team-grid">
+                            <p class="team-col-1">Nishika Uppula</p>
+                            <p class="team-col-2">Analyst</p>
+                        </div>
+                        </div>
+                </div>
+                <h4 class="center">Writers</h4>
+                <div class="content">
+                    <div class="content">
+                        <p>Steve Liu</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="button close-button-team" style="text-align:center">Close</button>
+                </div>            
+            </dialog>
+           
+        </div>
+        </div>
+        <div class = "the-map">
+            <div id="map"></div>
+            <div>
+            <!-- <img class="rouge-park-img" alt = "Rouge Park Map" src="img/rouge_park_map.png"> -->
+            </div>
+        </div>
+    </div>
+        
+    <!-- </div> -->
+<footer>
+    <div class = "footer-content">
+        Rouge Park &copy; 2022
+    </div>
+</footer>
+<script src="scripts/leaflet/script.js"></script>
+</body>
+</html>
