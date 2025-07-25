@@ -1,0 +1,431 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+
+html{
+    background-position: center center;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+        ),
+        url(../images/parklandingpage.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+/* body#the_front {
+    background-position: center center;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/parklandingpage.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-size: cover;
+    position: relative;
+} */
+.rouge-park-img {
+    width: 100%;
+    border-radius: 20px;
+}
+.intro-text, .event-text, .cal-text, .cal-text2 {
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 5vh;
+    font-size: 2vh;
+    line-height: 3vh;
+    margin-top: 5%;
+}
+
+.the-events {
+    background-color: white;
+    border-radius: 20px;
+    padding: 3vh;
+}
+
+h1{
+    font-size: 7vw; 
+    text-align: center;
+    line-height: 9vw;
+ }
+
+.event-header {
+    font-size: 3vh; 
+    text-align: left;
+    line-height: 3.5vh;
+}
+
+.event-descrip {
+    font-size: 1.5vh; 
+    text-align: left;
+    line-height: 2.2vh;
+}
+
+ .all-icons {
+    margin-top: 10%;
+    
+}
+.the-icon {
+    display: grid;
+    grid-template-columns: .15fr 1fr;
+    align-items: center;
+}
+
+ .material-icons.md-48{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+    margin:.5rem;
+}
+
+.icon-text {
+    vertical-align: middle;
+    text-align: left;
+}
+.view-text {
+    margin: 20px;
+}
+.view-all {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.enterbox {
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+}
+
+.enterbox button {
+    width: 12vh;
+    height: 6vh;
+    text-align:center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 3vh;
+    font-weight: 550;
+    border-color: black;
+    border-width: 0.2vh;
+    background-color: white;
+    border-radius: 1vh;
+}
+
+ .enterbutton:hover {
+    background-color: green;
+} 
+
+.homebox button {
+    width: 10vw;
+    height: 5vw;
+    float: right;
+    /* margin: 1vw 24vw -23vw 0; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 2.5vw;
+    font-weight: 550;
+    border-color: black;
+    border-width: 0.3vw;
+    background-color: white;
+    border-radius: 0.75vw;
+}
+
+ .homebutton:hover {
+    background-color: green;
+} 
+
+footer {
+    /* margin: 10px; */
+    /* margin-top: 100px; */
+    text-align: center;
+}
+
+footer#footer_front {
+    color: white;
+    /* margin-top: 16vh; */
+    font-size: 1rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+a {
+    /* color:blue; */
+    text-decoration: none;
+
+}
+
+a:visited {
+    /* color: blue; */
+    text-decoration: none;
+  }
+
+  nav li{
+    display:inline;
+    padding-bottom: 10px;
+  }
+
+.nav_links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  a.nav_item:link, a.nav_item:visited {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  nav .active {
+    color: #000000;
+    font-weight: 800;
+    text-decoration: underline 3px;
+    /* text-transform: uppercase; */
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    body {
+        margin: 50px;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .enterbox button {
+        width: 14vw;
+        height: 7vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+        float: right;
+    }
+
+    .event-header {
+        font-size: 3.5vh; 
+        text-align: left;
+        line-height: 4vh;
+    }
+
+    .event-descrip {
+        font-size: 1.75vh; 
+        text-align: left;
+        line-height: 2.25vh;
+    }
+
+    .specific-event-date {
+        font-size: 2vh;
+        line-height: 2.5vh;
+    }
+
+    .specific-event {
+        font-size: 3vh;
+        line-height: 3.5vh;
+    }
+
+    .rouge-park-img {
+        width: 100%;
+    }
+    h1{
+        font-size: 4vw; 
+        text-align: center;
+        line-height: 4vw;
+     }
+
+    .all-icons {
+        margin-top: 10%;
+    }
+
+    footer {
+        /* margin: 50px; */
+        /* margin-top: 100px; */
+        text-align: center;
+    }
+
+    footer#footer_front {
+        font-size: 1.5rem;
+    }
+
+    .cal-grid {
+        display: grid;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 2rem;
+    }
+
+    .event-box {
+        grid-column: 1/ span 3;
+    }
+
+    .cal-box {
+        grid-column: 4/ span 2;
+    }
+
+    .event-text, .cal-text, .cal-text2 {
+        background-color: rgb(238, 238, 238);
+        border-radius: 20px;
+        padding: 3vw;
+        margin-top: 0;
+    }
+    .cal-text2 {
+        margin-top: 5%;
+    }
+    footer#footer_front {
+        color: white;
+        /* margin-top: 200px; */
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 5px black;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .intro-grid {
+        display: grid;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 1rem;
+    }
+
+    .the-map {
+        grid-column: 1/ span 3;
+    }
+    body {
+        margin: 50px;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .enterbox {
+        justify-content: right;  
+        align-items: right; 
+    }
+    .enterbox button {
+        width: 14vh;
+        height: 7vh;
+        font-size: 3vh;
+        border-radius: 1vh;
+        float: right;
+    }
+
+    .intro-grid {
+        grid-gap: 2rem;
+    }
+      
+    .intro-text {
+        background-color: rgb(238, 238, 238);
+    }
+
+    .intro-text {
+        padding: 5vh;
+        margin-top: 0;
+        font-size: 2vh;
+        line-height: 4vh;
+    }
+    .intro-box {
+        grid-column: 5/ span 3;
+        /* margin-left: 10%; */
+    }
+
+    .welcome-rouge {
+        font-size: 2rem; 
+        text-align: center;
+    }
+
+    .rouge-intro {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    
+    .event-descrip {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .material-icons.md-48{
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48px;
+        margin:1rem;
+    }
+
+    .view-text {
+        margin: 20px;
+    }
+    .view-all {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    footer {
+        /* margin: 50px; */
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .cal-grid {
+        display: grid;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        grid-template-columns: repeat(9,1fr);
+        grid-gap: 2rem;
+    }
+
+    .event-box {
+        grid-column: 1/ span 3;
+    }
+
+    .cal-box {
+        grid-column: 4/ span 6;
+    }
+
+    .event-header {
+        font-size: 4vh;
+        line-height: 3.5vh;
+    }
+
+    .specific-event {
+        font-size: 3vh;
+        line-height: 3.5vh;
+    }
+    .event-descrip {
+        font-size: 1.5vh;
+        line-height: 2vh;
+    }
+
+    .specific-event-date {
+        font-size: 2vh;
+        line-height: 2.5vh;
+    }
+
+    .event-links {
+        font-size: 1.5vh;
+        line-height: 0;
+    }
+
+    footer#footer_front {
+        /* margin-top: 4vw; */
+    }
+
+}
